@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Aura Gold & Co.</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="flex flex-col min-h-screen bg-slate-950 text-slate-100">
+
+    <header class="sticky top-0 z-50 bg-slate-900/95 backdrop-blur-md border-b border-amber-500/30">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <a href="index.html" class="flex items-center gap-3">
+                    <div class="w-9 h-9 rounded-full bg-amber-400 flex items-center justify-center text-slate-950 text-lg font-bold shadow-md">✨</div>
+                    <span class="text-xl font-bold text-amber-400 brand-font tracking-widest">AURA GOLD</span>
+                </a>
+                <nav class="hidden md:flex space-x-8 font-medium text-sm">
+                    <a href="home.html" class="text-slate-200 hover:text-amber-400 transition">Home</a>
+                    <a href="about.html" class="text-amber-400 font-semibold border-b-2 border-amber-400 pb-0.5">About Us</a>
+                    <a href="services.html" class="text-slate-200 hover:text-amber-400 transition">Services</a>
+                    <a href="contact.html" class="text-slate-200 hover:text-amber-400 transition">Contact</a>
+                </nav>
+                <a href="contact.html" class="hidden md:inline-block bg-amber-400 hover:bg-amber-300 text-slate-950 font-bold px-5 py-2 rounded-full shadow-md text-sm transition">
+                    Get in Touch
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 flex-grow">
+        <div class="text-center max-w-2xl mx-auto mb-12">
+            <h1 class="text-3xl font-bold text-white">Our Heritage & Craftsmanship</h1>
+            <p class="text-slate-400 text-sm mt-3 leading-relaxed">
+                For over 15 years, Aura Gold has stood at the intersection of traditional goldsmithing and contemporary luxury design.
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center mb-12">
+            <div>
+                <h2 class="text-xl font-bold text-amber-300">1. Master Artisans & Pure Gold</h2>
+                <p class="mt-3 text-sm text-slate-300 leading-relaxed">
+                    Every piece in our catalog is engineered by master jewelers who have inherited centuries of goldsmithing techniques. We strictly utilize conflict-free, 100% lab-certified gold.
+                </p>
+            </div>
+            <div class="bg-slate-900 p-2 rounded-2xl border border-slate-800">
+                <img src="https://images.unsplash.com/photo-1584302179602-e4c3d3fd629d?auto=format&fit=crop&w=800&q=80" alt="Craftsmanship" class="rounded-xl w-full h-64 object-cover">
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center mb-12">
+            <div class="order-2 md:order-1 bg-slate-900 p-2 rounded-2xl border border-slate-800">
+                <img src="https://images.unsplash.com/photo-1603561591411-07134e71a2a9?auto=format&fit=crop&w=800&q=80" alt="Bullion" class="rounded-xl w-full h-64 object-cover">
+            </div>
+            <div class="order-1 md:order-2">
+                <h2 class="text-xl font-bold text-amber-300">2. Certified Investment Bullion</h2>
+                <p class="mt-3 text-sm text-slate-300 leading-relaxed">
+                    We supply financial institutions and private investors with 999.9 pure 24K gold bars complete with hallmark verifications.
+                </p>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+            <div>
+                <h2 class="text-xl font-bold text-amber-300">3. Hand-Picked Gemstones</h2>
+                <p class="mt-3 text-sm text-slate-300 leading-relaxed">
+                    Our luxury diamond-embedded gold pieces undergo rigorous quality checks to guarantee flawless stone setting and long-lasting sparkle.
+                </p>
+            </div>
+            <div class="bg-slate-900 p-2 rounded-2xl border border-slate-800">
+                <img src="https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?auto=format&fit=crop&w=800&q=80" alt="Bracelet" class="rounded-xl w-full h-64 object-cover">
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-slate-950 border-t border-slate-800 mt-auto py-8 text-center text-sm text-slate-400">
+        &copy; 2026 Aura Gold & Co. All rights reserved.
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
