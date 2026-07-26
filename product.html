@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aura Gold & Co. | Luxury Products & Catalog</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="flex flex-col min-h-screen bg-slate-950 text-slate-100 antialiased">
+
+    <!-- HEADER -->
+    <header class="sticky top-0 z-50 bg-slate-900/95 backdrop-blur-md border-b border-amber-500/30">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Bright Visible Logo -->
+                <a href="index.html" class="flex items-center gap-3">
+                    <div class="w-9 h-9 rounded-full bg-amber-400 flex items-center justify-center text-slate-950 text-lg font-bold shadow-md shadow-amber-500/20">✨</div>
+                    <span class="text-xl font-bold text-amber-400 brand-font tracking-widest">AURA GOLD</span>
+                </a>
+                
+                <!-- Navigation Links -->
+                <nav class="hidden md:flex space-x-8 font-medium text-sm">
+                    <a href="index.html" class="text-slate-200 hover:text-amber-400 transition">Home</a>
+                    <a href="products.html" class="text-amber-400 font-semibold border-b-2 border-amber-400 pb-0.5">Catalog</a>
+                    <a href="about.html" class="text-slate-200 hover:text-amber-400 transition">About Us</a>
+                    <a href="services.html" class="text-slate-200 hover:text-amber-400 transition">Services</a>
+                    <a href="contact.html" class="text-slate-200 hover:text-amber-400 transition">Contact</a>
+                </nav>
+
+                <!-- Actions: Search Trigger & Shopping Cart -->
+                <div class="flex items-center gap-4">
+                    <button class="relative p-2 text-slate-200 hover:text-amber-400 transition" aria-label="Shopping Cart">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"></path>
+                        </svg>
+                        <span class="absolute top-1 right-1 bg-amber-400 text-slate-950 font-bold text-xs w-4 h-4 rounded-full flex items-center justify-center">3</span>
+                    </button>
+                    <a href="contact.html" class="hidden md:inline-block bg-amber-400 hover:bg-amber-300 text-slate-950 font-bold px-5 py-2 rounded-full shadow-md text-sm transition">
+                        Get in Touch
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <!-- COMPACT HERO BANNER -->
+    <section class="relative bg-gradient-to-b from-slate-950 via-slate-900 to-slate-950 py-10 border-b border-slate-800">
+        <div class="mx-auto px-4 sm:px-6 lg:px-8 text-center max-w-3xl">
+            <span class="text-amber-300 font-semibold tracking-widest text-xs uppercase px-3.5 py-1 rounded-full bg-amber-500/20 border border-amber-400/30 inline-block mb-3">
+                Exclusive Collection
+            </span>
+            <h1 class="text-3xl sm:text-4xl font-bold text-white leading-tight">
+                Explore Our <span class="text-amber-400">Luxury Product Vault</span>
+            </h1>
+            <p class="mt-2 text-sm text-slate-300 max-w-xl mx-auto">
+                Filter through our hand-crafted 24K, 22K, and 18K fine gold pieces, certified bullion, and bespoke bridal sets.
+            </p>
+        </div>
+    </section>
+
+    <!-- MAIN PRODUCT STOREFRONT -->
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 flex-grow">
+        
+        <!-- SEARCH & FILTER TOOLBAR -->
+        <div class="flex flex-col md:flex-row gap-4 items-center justify-between pb-8 border-b border-slate-800">
+            <!-- Search Bar -->
+            <div class="relative w-full md:w-80">
+                <input type="text" placeholder="Search necklaces, rings..." class="w-full bg-slate-900 border border-slate-800 text-slate-200 text-sm rounded-xl px-4 py-2.5 pl-10 focus:outline-none focus:border-amber-400 transition" />
+                <svg class="w-4 h-4 text-slate-400 absolute left-3.5 top-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                </svg>
+            </div>
+
+            <!-- Category Pills -->
+            <div class="flex flex-wrap gap-2 w-full md:w-auto justify-start md:justify-end text-xs font-semibold">
+                <button class="bg-amber-400 text-slate-950 px-4 py-2 rounded-xl">All Items</button>
+                <button class="bg-slate-900 border border-slate-800 text-slate-300 hover:border-amber-400 px-4 py-2 rounded-xl transition">Necklaces</button>
+                <button class="bg-slate-900 border border-slate-800 text-slate-300 hover:border-amber-400 px-4 py-2 rounded-xl transition">Rings</button>
+                <button class="bg-slate-900 border border-slate-800 text-slate-300 hover:border-amber-400 px-4 py-2 rounded-xl transition">Bangles</button>
+                <button class="bg-slate-900 border border-slate-800 text-slate-300 hover:border-amber-400 px-4 py-2 rounded-xl transition">Bullion Bars</button>
+            </div>
+        </div>
+
+        <!-- PRODUCT GRID (8 ITEMS) -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-8">
+
+            <!-- Product 1 -->
+            <div class="bg-slate-900 rounded-2xl overflow-hidden border border-slate-800 hover:border-amber-400 transition group flex flex-col">
+                <div class="relative overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?auto=format&fit=crop&w=600&q=80" alt="Royal 24K Necklace" class="w-full h-60 object-cover group-hover:scale-105 transition duration-500">
+                    <span class="absolute top-3 left-3 bg-amber-400 text-slate-950 text-[10px] font-bold px-2.5 py-1 rounded-full uppercase">Best Seller</span>
+                </div>
+                <div class="p-5 flex flex-col flex-grow justify-between">
+                    <div>
+                        <h3 class="text-base font-bold text-amber-100">Royal 24K Necklace</h3>
+                        <p class="text-slate-400 text-xs mt-1">Pure Gold • 45.2 Grams</p>
+                    </div>
+                    <div class="mt-4 pt-3 border-t border-slate-800 flex items-center justify-between">
+                        <span class="text-amber-400 font-bold text-lg">$2,850</span>
+                        <button class="bg-amber-400/10 hover:bg-amber-400 text-amber-300 hover:text-slate-950 border border-amber-400/30 p-2 rounded-xl transition">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"></path></svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="bg-slate-900 rounded-2xl overflow-hidden border border-slate-800 hover:border-amber-400 transition group flex flex-col">
+                <div class="relative overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1605100804763-247f67b3557e?auto=format&fit=crop&w=600&q=80" alt="Diamond Gold Ring" class="w-full h-60 object-cover group-hover:scale-105 transition duration-500">
+                </div>
+                <div class="p-5 flex flex-col flex-grow justify-between">
+                    <div>
+                        <h3 class="text-base font-bold text-amber-100">Solitaire Diamond Ring</h3>
+                        <p class="text-slate-400 text-xs mt-1">18K Yellow Gold • VVS1</p>
+                    </div>
+                    <div class="mt-4 pt-3 border-t border-slate-800 flex items-center justify-between">
+                        <span class="text-amber-400 font-bold text-lg">$1,450</span>
+                        <button class="bg-amber-400/10 hover:bg-amber-400 text-amber-300 hover:text-slate-950 border border-amber-400/30 p-2 rounded-xl transition">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"></path></svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="bg-slate-900 rounded-2xl overflow-hidden border border-slate-800 hover:border-amber-400 transition group flex flex-col">
+                <div class="relative overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1611591475155-4282fc289e14?auto=format&fit=crop&w=600&q=80" alt="Heritage Bangles" class="w-full h-60 object-cover group-hover:scale-105 transition duration-500">
+                    <span class="absolute top-3 left-3 bg-amber-500/20 text-amber-300 border border-amber-400/30 text-[10px] font-bold px-2.5 py-1 rounded-full uppercase">Set of 4</span>
+                </div>
+                <div class="p-5 flex flex-col flex-grow justify-between">
+                    <div>
+                        <h3 class="text-base font-bold text-amber-100">Heritage Bangles Set</h3>
+                        <p class="text-slate-400 text-xs mt-1">21K Gold • Carved Pattern</p>
+                    </div>
+                    <div class="mt-4 pt-3 border-t border-slate-800 flex items-center justify-between">
+                        <span class="text-amber-400 font-bold text-lg">$3,200</span>
+                        <button class="bg-amber-400/10 hover:bg-amber-400 text-amber-300 hover:text-slate-950 border border-amber-400/30 p-2 rounded-xl transition">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"></path></svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 4 -->
+            <div class="bg-slate-900 rounded-2xl overflow-hidden border border-slate-800 hover:border-amber-400 transition group flex flex-col">
+                <div class="relative overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1630019852942-f89202989a59?auto=format&fit=crop&w=600&q=80" alt="Luxury Drop Earrings" class="w-full h-60 object-cover group-hover:scale-105 transition duration-500">
+                </div>
+                <div class="p-5 flex flex-col flex-grow justify-between">
+                    <div>
+                        <h3 class="text-base font-bold text-amber-100">Luxury Drop Earrings</h3>
+                        <p class="text-slate-400 text-xs mt-1">22K Handcrafted Gold</p>
+                    </div>
+                    <div class="mt-4 pt-3 border-t border-slate-800 flex items-center justify-between">
+                        <span class="text-amber-400 font-bold text-lg">$980</span>
+                        <button class="bg-amber-400/10 hover:bg-amber-400 text-amber-300 hover:text-slate-950 border border-amber-400/30 p-2 rounded-xl transition">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"></path></svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 5 -->
+            <div class="bg-slate-900 rounded-2xl overflow-hidden border border-slate-800 hover:border-amber-400 transition group flex flex-col">
+                <div class="relative overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1617038260897-41a1f14a8ca0?auto=format&fit=crop&w=600&q=80" alt="Certified Bullion Bar" class="w-full h-60 object-cover group-hover:scale-105 transition duration-500">
+                    <span class="absolute top-3 left-3 bg-emerald-500/20 text-emerald-400 border border-emerald-400/30 text-[10px] font-bold px-2.5 py-1 rounded-full uppercase">Investment Grade</span>
+                </div>
+                <div class="p-5 flex flex-col flex-grow justify-between">
+                    <div>
+                        <h3 class="text-base font-bold text-amber-100">100g 24K Bullion Bar</h3>
+                        <p class="text-slate-400 text-xs mt-1">.9999 Pure Fine Gold</p>
+                    </div>
+                    <div class="mt-4 pt-3 border-t border-slate-800 flex items-center justify-between">
+                        <span class="text-amber-400 font-bold text-lg">$7,420</span>
+                        <button class="bg-amber-400/10 hover:bg-amber-400 text-amber-300 hover:text-slate-950 border border-amber-400/30 p-2 rounded-xl transition">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"></path></svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 6 -->
+            <div class="bg-slate-900 rounded-2xl overflow-hidden border border-slate-800 hover:border-amber-400 transition group flex flex-col">
+                <div class="relative overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?auto=format&fit=crop&w=600&q=80" alt="Bridal Gold Pendant" class="w-full h-60 object-cover group-hover:scale-105 transition duration-500">
+                </div>
+                <div class="p-5 flex flex-col flex-grow justify-between">
+                    <div>
+                        <h3 class="text-base font-bold text-amber-100">Bridal Gold Pendant</h3>
+                        <p class="text-slate-400 text-xs mt-1">21K Gold • Emerald Inlay</p>
+                    </div>
+                    <div class="mt-4 pt-3 border-t border-slate-800 flex items-center justify-between">
+                        <span class="text-amber-400 font-bold text-lg">$1,890</span>
+                        <button class="bg-amber-400/10 hover:bg-amber-400 text-amber-300 hover:text-slate-950 border border-amber-400/30 p-2 rounded-xl transition">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"></path></svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 7 -->
+            <div class="bg-slate-900 rounded-2xl overflow-hidden border border-slate-800 hover:border-amber-400 transition group flex flex-col">
+                <div class="relative overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1573408301185-9146fe634ad0?auto=format&fit=crop&w=600&q=80" alt="Cuban Link Chain" class="w-full h-60 object-cover group-hover:scale-105 transition duration-500">
+                </div>
+                <div class="p-5 flex flex-col flex-grow justify-between">
+                    <div>
+                        <h3 class="text-base font-bold text-amber-100">Cuban Link Chain</h3>
+                        <p class="text-slate-400 text-xs mt-1">22K Gold • Heavyweight 60g</p>
+                    </div>
+                    <div class="mt-4 pt-3 border-t border-slate-800 flex items-center justify-between">
+                        <span class="text-amber-400 font-bold text-lg">$3,950</span>
+                        <button class="bg-amber-400/10 hover:bg-amber-400 text-amber-300 hover:text-slate-950 border border-amber-400/30 p-2 rounded-xl transition">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"></path></svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 8 -->
+            <div class="bg-slate-900 rounded-2xl overflow-hidden border border-slate-800 hover:border-amber-400 transition group flex flex-col">
+                <div class="relative overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1603561591411-07134e71a2a9?auto=format&fit=crop&w=600&q=80" alt="Classic Gold Bracelet" class="w-full h-60 object-cover group-hover:scale-105 transition duration-500">
+                </div>
+                <div class="p-5 flex flex-col flex-grow justify-between">
+                    <div>
+                        <h3 class="text-base font-bold text-amber-100">Classic Gold Bracelet</h3>
+                        <p class="text-slate-400 text-xs mt-1">18K Solid Yellow Gold</p>
+                    </div>
+                    <div class="mt-4 pt-3 border-t border-slate-800 flex items-center justify-between">
+                        <span class="text-amber-400 font-bold text-lg">$1,120</span>
+                        <button class="bg-amber-400/10 hover:bg-amber-400 text-amber-300 hover:text-slate-950 border border-amber-400/30 p-2 rounded-xl transition">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"></path></svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-slate-950 border-t border-slate-800 mt-auto py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-sm text-slate-400">
+            &copy; 2026 Aura Gold & Co. All rights reserved.
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
